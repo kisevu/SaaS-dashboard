@@ -1,4 +1,5 @@
-package com.oscaris.kitchen.user.DTO.request;
+package com.oscaris.kitchen.user.DTO.response;
+
 /*
 *
 @author ameda
@@ -15,10 +16,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class RegisterRequest {
-
-    private String name;
-    private String email;
-    private String password;
-
+public class AuthenticationResponse {
+    private String jwtToken;
+    private String message;
 }
