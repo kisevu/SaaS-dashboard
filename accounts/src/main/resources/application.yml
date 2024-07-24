@@ -1,0 +1,10 @@
+server:
+  port: 9001
+
+spring:
+  application:
+    name: accounts
+  data:
+    mongodb:
+      uri: ${MONGO_URI}
+      database: ${MONGO_ACCOUNTS_DB}

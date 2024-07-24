@@ -1,0 +1,21 @@
+server:
+  port: 9000
+
+spring:
+  application:
+    name: user-management
+  data:
+    mongodb:
+      uri: ${MONGO_URI}
+      database: ${MONGO_USERS_DB}
+  mail:
+    host: ${MAIL_HOST}
+    port: ${MAIL_PORT}
+    username: ${MAIL_USERNAME}
+    password: ${MAIL_PASSWORD}
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
